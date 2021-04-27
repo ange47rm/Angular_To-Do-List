@@ -1,0 +1,13 @@
+ <app-add-todo (addTodo)="addTodo($event)" ></app-add-todo>
+ <app-to-do-item 
+    
+    *ngFor="let todo of todos" 
+    [todo]="todo"                           
+    (deleteTodo)="deleteTodo($event)"
+>
+     
+
+ </app-to-do-item>
+
+
+ <!--  ngFor will loop over the items in the "todos" iterable -->

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+@Component({              // DECORATOR (metadata for the component)
+  selector: 'app-root',   // Included in index.html
+  templateUrl: './app.component.html',  // Points to HTML template
+  styleUrls: ['./app.component.css']    // Points to CSS file
 })
 export class AppComponent {
-  title = 'angular-crash-todolist';
+  name:string = 'Angelo';
 }

@@ -1,0 +1,7 @@
+<form class="form" (ngSubmit)="onSubmit()">
+    <input type="text" name="title" [(ngModel)]="title" placeholder="Add To-Do">
+    <input type="submit" value="Submit" class="btn">
+</form>
+
+<!-- ngModel: Angular directive for 2-way databinding. We're binding what will be the input to the title property of the Todo.
+ngModel requires the Forms module to be imported in the main app -->
